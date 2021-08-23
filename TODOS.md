@@ -11,3 +11,5 @@
         * Zero or more locations.
         * 12am to 12am working hours constraint.
         * 0 KRW to 50m KRW monthly salary constraint but as a full integer.
+* Fix up database definitions with indexes and constraints.
+* Add missing data fields.

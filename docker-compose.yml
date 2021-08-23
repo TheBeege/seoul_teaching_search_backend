@@ -2,10 +2,16 @@ version: "3.9"
 services:
   db:
     image: postgres
+    ports:
+      - target: 5432
+        published: 5432
     volumes:
       - type: volume
         source: data
         target: /var/lib/postgresql/data
+      - type: bind
+        source: ./init_db.sql
+        target: /docker-entrypoint-initdb.d/init_db.sql
     environment:
       POSTGRES_PASSWORD: postgres
 

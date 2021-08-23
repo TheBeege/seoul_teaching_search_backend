@@ -9,6 +9,8 @@ This project is being coordinated via the [CodeSeoul Discord](https://discord.gg
 ## Standards
 * While GraphQL may be a better for this specific project, we will primarily use REST due to prevalence throughout the industry. Later, we can provide a GraphQL interface in addition to the REST interface.
 * This is basic Spring boot. We don't want things to be too fancy or crazy. KISS baby.
+* If you touch existing code, leave it better than you found it.
+* We're using conventional commits. Eventually, we'll generate release notes from commit messages, so get in the habit of this and try to keep things clean.
 
 ## Process for Contributions
 1. Make sure you've read the above.

@@ -23,6 +23,6 @@ While we are providing Windows instructions, you should save yourself the future
       * [Docker Compose Installation](https://docs.docker.com/compose/install/)
 3. Start the database with `docker-compose up -d`
 
-Good job. You're ready.
+Good job. You're ready. You can view the database using the [adminer UI at `http://localhost:8080`](http://localhost:8080). Select PostgreSQL as the database and use the credentials `postgres` / `postgres`.
 
 When you're finished and want to tear down the database, you can use `docker-compose down`.

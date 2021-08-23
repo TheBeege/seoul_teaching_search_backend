@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  db:
+    image: postgres
+    volumes:
+      - type: volume
+        source: data
+        target: /var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - target: 8080
+        published: 8080
+
+volumes:
+  data: {}
